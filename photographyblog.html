@@ -55,6 +55,8 @@ body {
           <li><a href="./about.html" title="">About me</a></li>
           <li><a href="./contact.html" title="">Contact</a></li>
         </ul>
+        <button onclick="myFunction()">Toggle dark mode</button>
+
 
 
           <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
@@ -147,6 +149,12 @@ body {
   document.addEventListener("DOMContentLoaded", function (event) {
      navActivePage();
   });
+</script>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
 </script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
