@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link nav-link-1 active" aria-current="page" href="index.html">1</a>
+                    <a class="nav-link nav-link-1 active" aria-current="page">1</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-2" href="photopage2.html">2</a>
@@ -72,6 +72,17 @@
     padding: 0 4px;
   }
 
+  /* Create hover effect */
+  .hover04 figure img {
+  	width: 400px;
+  	height: auto;
+  	-webkit-transition: .3s ease-in-out;
+  	transition: .3s ease-in-out;
+  }
+  .hover04 figure:hover img {
+  	width: 300px;
+  }
+
   /* Create four equal columns that sits next to each other */
   .column {
     -ms-flex: 25%; /* IE10 */
@@ -109,7 +120,7 @@
 
   <!-- Photo Grid -->
   <div class="row">
-    <div class="column">
+    <div class="hover04 column">
       <img src="assets/Cameracaptures/Bomjesus.jpg" style="width:100%">
       <img src="assets/Cameracaptures/paradiseflycatcher.jpg" style="width:100%">
       <img src="assets/Cameracaptures/20131130_070405_edited.jpg" style="width:100%">
